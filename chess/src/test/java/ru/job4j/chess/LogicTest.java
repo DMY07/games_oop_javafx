@@ -8,7 +8,6 @@ import ru.job4j.chess.firuges.black.BishopBlack;
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-
 public class LogicTest {
 
     @Test
@@ -32,7 +31,8 @@ public class LogicTest {
     }
 
     @Test
-    public void whenMoveIsValidThenSuccess() throws FigureNotFoundException, ImpossibleMoveException, OccupiedCellException {
+    public void wheтSuccess() throws FigureNotFoundException,
+            ImpossibleMoveException, OccupiedCellException {
         Logic logic = new Logic();
         logic.add(new BishopBlack(Cell.C1));
         logic.move(Cell.C1, Cell.H6);
