@@ -33,3 +33,5 @@ public class QueenBlack implements Figure {
         return new QueenBlack(dest);
     }
 }
+
+/* т1 */

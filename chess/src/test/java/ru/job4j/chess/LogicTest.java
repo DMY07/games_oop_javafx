@@ -58,3 +58,4 @@ public class LogicTest {
         assertThat(figureFound).isTrue();
     }
 }
+/* т1 */

@@ -50,3 +50,4 @@ public final class Logic {
         return figures;
     }
 }
+/* т1 */
