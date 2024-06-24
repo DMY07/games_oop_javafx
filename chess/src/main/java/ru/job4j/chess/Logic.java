@@ -36,7 +36,7 @@ public final class Logic {
         figures.clear();
     }
 
-    int findBy(Cell cell) throws FigureNotFoundException {
+    private int findBy(Cell cell) throws FigureNotFoundException {
         for (int index = 0; index != figures.size(); index++) {
             Figure figure = figures.get(index);
             if (figure != null && figure.position().equals(cell)) {
