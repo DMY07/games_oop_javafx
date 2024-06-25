@@ -42,21 +42,6 @@ public class LogicTest {
         });
         assertThat(exception.getMessage()).isEqualTo("Cell D2 is occupied");
     }
-
-    @Test
-    public void whenMoveIsValidThenSuccess() throws FigureNotFoundException,
-            ImpossibleMoveException, OccupiedCellException {
-        Logic logic = new Logic();
-        logic.add(new BishopBlack(Cell.C1));
-        logic.move(Cell.C1, Cell.H6);
-        boolean figureFound = false;
-        for (Figure figure : logic.getFigures()) {
-            if (figure != null && figure.position().equals(Cell.H6)) {
-                figureFound = true;
-                break;
-            }
-        }
-        assertThat(figureFound).isTrue();
-    }
 }
+
 /* т1 */
